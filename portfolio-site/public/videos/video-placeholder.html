@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Placeholder</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    code {
+      background-color: #2a2a2a;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .steps {
+      text-align: left;
+      margin-top: 30px;
+    }
+    .steps ol {
+      padding-left: 20px;
+    }
+    .steps li {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Video Placeholder</h1>
+    <p>This is a placeholder for your video that will appear in the About section of your portfolio.</p>
+
+    <div class="steps">
+      <h2>How to Replace This with Your Video:</h2>
+      <ol>
+        <li>Prepare an MP4 video file (ideally 15-30 seconds, optimized for web)</li>
+        <li>Name your video file (e.g., <code>about-video.mp4</code>)</li>
+        <li>Place it in the <code>public/videos/</code> directory</li>
+        <li>Update the <code>src</code> attribute in <code>AboutSection.tsx</code> to point to your video:
+          <br><br>
+          <code>&lt;InfiniteLoopVideo src="/videos/about-video.mp4" className="w-full aspect-video rounded-lg shadow-lg" /&gt;</code>
+        </li>
+      </ol>
+    </div>
+
+    <p>Your video will automatically play in a continuous loop, without sound, providing a seamless visual experience in your portfolio.</p>
+  </div>
+</body>
+</html>
